@@ -4,6 +4,7 @@ import org.junit.Test;
 
 public class FizzBuzzTests {
 
+    // first assumption - return a string
     // Test 1, need a String array of known size or an ArrayList of unknown size
     @Test
     public void fizzBuzzIsStringTest() {
