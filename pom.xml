@@ -11,7 +11,11 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>RELEASE</version>
+            <!--
+                  A vulnerability was found in cbeust testng. It has been declared as critical. Affected by this vulnerability is the function testngXmlExistsInJar of the file testng-core/src/main/java/org/testng/JarFileUtils.java of the component XML File Parser. The manipulation leads to path traversal. The attack can be launched remotely. A patch is available in commit 9150736cd2c123a6a3b60e6193630859f9f0422b. It is recommended to apply a patch to fix this issue. The patch was pushed into the master branch but no releases have yet been made with the patch included.
+             -->
+            <!-- Declaring an open-ended version range -->
+            <version>[7.6.2,)</version>
             <scope>test</scope>
         </dependency>
         <dependency>
